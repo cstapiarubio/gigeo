@@ -10,21 +10,45 @@
     }
     &_div2{
         justify-content: flex-end;
-        padding-top: 2%;
+        margin: auto 0;
         width:30%;
+        @include for-phone-only{
+            display: none;
+        }
+        @include for-tablet-portrait-up{
+            display: none;
+        }
     }
     &_div_img{
         width: 20%;
         padding-left: 5%;
+        @include for-phone-only{
+            padding-left: 35%;
+            width:80%;
+        }
+        @include for-tablet-portrait-up{
+            padding-left: 35%;
+            width:80%;
+        }
     }
     &_div_p{
         width: 80%;
     }
+    &_div_h4{
+        width: 80%;
+    }
     &_button{
         padding: 2% 10%;
+        color:white;
     }
     &_img{
-        width: 50%;
+        width: 70%;
         border-radius: 50%;
+        @include for-phone-only{
+            width: 100%;
+        }
+        @include for-tablet-portrait-up{
+            width: 100%;
+        }
     }
 }

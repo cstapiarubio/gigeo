@@ -1,5 +1,9 @@
 .cards{
     padding-left: 10%;
+    @include for-tablet-landscape-up{
+        max-width: 960px;
+        padding-left: 1%;
+     }
     &_h1{
         display: block;
         width: 100%;
@@ -11,6 +15,12 @@
         margin:1%;
         width:208px;
         border: none !important;
+        @include for-phone-only{
+            width: 100%;
+        }
+        @include for-tablet-portrait-up{
+            width: 100%;
+        }
     }
     .card-deck{
         margin:0 !important;

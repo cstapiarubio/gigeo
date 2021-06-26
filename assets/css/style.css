@@ -10740,9 +10740,25 @@ textarea.form-control-lg {
   height: 50vh;
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 599px) {
+  .header_img {
+    height: 20vh;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .header_img {
+    height: 20vh;
+  }
+}
 
 .cards {
   padding-left: 10%;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .cards {
+    max-width: 960px;
+    padding-left: 1%;
+  }
 }
 .cards_h1 {
   display: block;
@@ -10755,6 +10771,16 @@ textarea.form-control-lg {
   margin: 1%;
   width: 208px;
   border: none !important;
+}
+@media (min-width: 0px) and (max-width: 599px) {
+  .cards .card {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .cards .card {
+    width: 100%;
+  }
 }
 .cards .card-deck {
   margin: 0 !important;
@@ -10774,22 +10800,58 @@ textarea.form-control-lg {
 }
 .profile_div2 {
   justify-content: flex-end;
-  padding-top: 2%;
+  margin: auto 0;
   width: 30%;
+}
+@media (min-width: 0px) and (max-width: 599px) {
+  .profile_div2 {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .profile_div2 {
+    display: none;
+  }
 }
 .profile_div_img {
   width: 20%;
   padding-left: 5%;
 }
+@media (min-width: 0px) and (max-width: 599px) {
+  .profile_div_img {
+    padding-left: 35%;
+    width: 80%;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .profile_div_img {
+    padding-left: 35%;
+    width: 80%;
+  }
+}
 .profile_div_p {
+  width: 80%;
+}
+.profile_div_h4 {
   width: 80%;
 }
 .profile_button {
   padding: 2% 10%;
+  color: white;
 }
 .profile_img {
-  width: 50%;
+  width: 70%;
   border-radius: 50%;
+}
+@media (min-width: 0px) and (max-width: 599px) {
+  .profile_img {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .profile_img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
