@@ -1,0 +1,19 @@
+.cards{
+    padding-left: 10%;
+    &_h1{
+        display: block;
+        width: 100%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 1%;
+    }
+    .card{
+        margin:1%;
+        width:208px;
+        border: none !important;
+    }
+    .card-deck{
+        margin:0 !important;
+        padding:0 !important;
+    }
+}
