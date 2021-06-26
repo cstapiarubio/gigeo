@@ -23,8 +23,8 @@
         width: 20%;
         padding-left: 5%;
         @include for-phone-only{
-            padding-left: 35%;
-            width:80%;
+            padding-left: 0%;
+            width:100%;
         }
         @include for-tablet-portrait-up{
             padding-left: 35%;
@@ -33,13 +33,46 @@
     }
     &_div_p{
         width: 80%;
+        @include for-phone-only{
+            width:100%;
+        }
+        @include for-tablet-portrait-up{
+            width:100%;
+        }
+    }
+    &_p{
+        color: $gray;
+        font-size: $font-size-small;
+        @include for-phone-only{
+            font-size: $font-size-x-large;
+        }
+        @include for-tablet-portrait-up{
+            font-size: $font-size-x-large;
+        }
     }
     &_div_h4{
         width: 80%;
     }
+    &_h4{
+        font-size: $font-size-medium;
+        font-weight: $bold;
+        @include for-phone-only{
+            font-size: $font-size-xx-large;
+        }
+        @include for-tablet-portrait-up{
+            font-size: $font-size-xx-large;
+        }
+    }
     &_button{
         padding: 2% 10%;
         color:white;
+        font-size: $font-size-small;
+    }
+    &_button:first-child{
+        background-color: $sky-blue;
+    }
+    &_button:last-child{
+        background-color: $persimmon;
     }
     &_img{
         width: 70%;

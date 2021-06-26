@@ -1,13 +1,13 @@
 //abstract
-//@import './abstract/variables';
+@import './abstract/variables';
 @import './abstract/mixins';
 //vendors
 @import './vendors/bootstrap-5.0.1/scss/bootstrap';
 //base
-//@import './base/tipografia';
+@import './base/tipografia';
 @import './base/reset';
 //layout
-//@import './layout/nav';
+@import './layout/nav';
 @import './layout/header';
 //components
 @import './components/cards';

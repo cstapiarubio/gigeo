@@ -1,5 +1,11 @@
 .cards{
     padding-left: 10%;
+    @include for-phone-only{
+        padding-left:1%;
+    }
+    @include for-tablet-portrait-up{
+        padding-left:1%;
+    }
     @include for-tablet-landscape-up{
         max-width: 960px;
         padding-left: 1%;
@@ -10,6 +16,14 @@
         padding-top: 3%;
         padding-bottom: 3%;
         padding-left: 1%;
+        font-size: $font-size-xx-large;
+        font-weight: $bold;
+        @include for-phone-only{
+            text-align: center;
+        }
+        @include for-tablet-portrait-up{
+            text-align: center;
+        }
     }
     .card{
         margin:1%;
@@ -21,9 +35,36 @@
         @include for-tablet-portrait-up{
             width: 100%;
         }
+        @include for-tablet-landscape-up{
+           width: 200px;
+         }
     }
     .card-deck{
         margin:0 !important;
         padding:0 !important;
+        @include for-tablet-landscape-up{
+            max-width: 960px;
+            padding-left: 1%;
+         }
+    }
+    .card-title{
+        font-weight: $bold;
+        font-size: $font-size-small;
+        @include for-phone-only{
+            font-size: $font-size-x-large;
+        }
+        @include for-tablet-portrait-up{
+            font-size: $font-size-x-large;
+        }
+    }
+    .card-text{
+        font-weight: $lato-weight-regular;
+        font-size: $font-size-x-small;
+        @include for-phone-only{
+            font-size: $font-size-large;
+        }
+        @include for-tablet-portrait-up{
+            font-size: $font-size-large;
+        }
     }
 }

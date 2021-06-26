@@ -1,0 +1,21 @@
+.navbar{
+    &-brand{
+        font-size: $font-size-xx-large;
+        font-weight: $bold;
+        @include for-phone-only{
+            font-size: $font-size-xxx-large;
+        }
+        @include for-tablet-portrait-up{
+            font-size: $font-size-xxx-large;
+        }
+    }  
+    sup{
+        font-size: $font-size-large;
+        @include for-phone-only{
+            font-size: $font-size-x-large;
+        }
+        @include for-tablet-portrait-up{
+            font-size: $font-size-x-large;
+        }
+    } 
+}
